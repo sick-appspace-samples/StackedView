@@ -1,0 +1,58 @@
+<layout-row id="RowLayout1">
+	<layout-row id="RowLayout2">
+		<layout-column id="ColumnLayout1">
+      <davinci-checkbox id="Checkbox1">
+        <span>Checkbox</span>
+      </davinci-checkbox>
+      <davinci-spinner id="Spinner1">
+        <span>Spinner</span>
+      </davinci-spinner>
+      <davinci-button id="Button1" type="primary">
+        <span>Button</span>
+      </davinci-button>
+		</layout-column>
+		<layout-column id="ColumnLayout2">
+			<stacked-view id="StackedView1">
+				<stacked-pane id="StackedPane11" value="state1">
+					<davinci-checkbox id="Checkbox2">
+						<span>Checkbox</span>
+					</davinci-checkbox>
+				</stacked-pane>
+				<stacked-pane id="StackedPane12" value="state2">
+					<davinci-spinner id="Spinner2">
+						<span>Spinner</span>
+					</davinci-spinner>
+				</stacked-pane>
+				<stacked-pane id="StackedPane13" value="state3">
+					<davinci-button id="Button2" type="primary">
+						<span>Button</span>
+					</davinci-button>
+			</stacked-pane>
+				<crown-binding property="value" name="StackedView/getState_StackedView1" path="result/data/state"  update-on-resume></crown-binding>
+				<crown-edpws-binding property="value" name="StackedView/OnStateChanged_StackedView1" update-on-resume></crown-edpws-binding>
+			</stacked-view>
+		</layout-column>
+		<layout-column id="ColumnLayout3">
+			<stacked-view id="StackedView2">
+				<stacked-pane id="StackedPane21" value="state1">
+					<davinci-checkbox id="Checkbox3">
+						<span>Checkbox</span>
+					</davinci-checkbox>
+				</stacked-pane>
+				<stacked-pane id="StackedPane22" value="state2">
+					<davinci-spinner id="Spinner3">
+						<span>Spinner</span>
+					</davinci-spinner>
+				</stacked-pane>
+				<stacked-pane id="StackedPane23" value="state3">
+					<davinci-button id="Button3" type="primary">
+						<span>Button</span>
+					</davinci-button>
+				</stacked-pane>
+        <crown-binding property="value" name="StackedView/getState_StackedView2" path="result/data/state"  update-on-resume></crown-binding>
+				<crown-edpws-binding property="value" name="StackedView/OnStateChanged_StackedView2" update-on-resume></crown-edpws-binding>
+			</stacked-view>
+		</layout-column>
+	</layout-row>
+  
+</layout-row>

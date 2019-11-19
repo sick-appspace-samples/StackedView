@@ -1,0 +1,17 @@
+:root
+{ --default-margin: 10px; }
+
+layout-row > *:not(layout-row):not(layout-column):not(stacked-view):not(stacked-pane):not(davinci-toggle-group)
+{     margin: var(--default-margin) 0 0 var(--default-margin); }
+
+layout-column > *:not(layout-row):not(layout-column):not(stacked-view):not(stacked-pane):not(davinci-toggle-group)
+{     margin: var(--default-margin) 0 0 var(--default-margin); }
+
+stacked-pane > *:not(layout-row):not(layout-column):not(stacked-view):not(stacked-pane):not(davinci-toggle-group)
+{     margin: var(--default-margin) 0 0 var(--default-margin); }
+
+davinci-tab > *:not(layout-row):not(layout-column):not(stacked-view):not(stacked-pane):not(davinci-toggle-group)
+{     margin: var(--default-margin) 0 0 var(--default-margin); }
+
+davinci-toggle-group > *:not(layout-row):not(layout-column):not(stacked-view):not(stacked-pane):not(davinci-toggle-group)
+{     margin: var(--default-margin) 0 0 var(--default-margin); }
